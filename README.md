@@ -10,6 +10,7 @@
 ```
 git clone https://github.com/Renigan1/dz10_1.git
 ```
+2. Установите зависимости из pyproject.toml
 
 ## Использование:
 
