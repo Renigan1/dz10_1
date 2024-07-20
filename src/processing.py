@@ -1,6 +1,6 @@
 def filter_by_state(list_of_dicts: list, state: str = "EXECUTED") -> list:
     """Функция, которая принимает на вход список словарей с данными о банковских операциях и параметр state, возвращает
-    новый список, содержащий только те словари, у которых ключ state содержит переданное в функцию значение"""
+    новый список, содержащий только те словари, у которых ключ state содержит переданное в функцию значение."""
     filtered_lis = []
     for dictionary_element in list_of_dicts:
         if dictionary_element.get("state") == state:
