@@ -1,3 +1,4 @@
+from src.decorators import log
 from src.generators import filter_by_currency, transaction_descriptions, card_number_generator
 from src.processing import filter_by_state, sort_by_date
 from src.widget import get_data, mask_account_card
@@ -131,3 +132,35 @@ print()
 
 for card_number in card_number_generator(start=1, stop=5):
     print(card_number)
+
+print()
+
+
+@log(filename="mylog.txt")
+def my_function(x, y):
+    return x + y
+
+
+my_function(1, 2)
+
+print()
+
+
+@log()
+def function_error(x, y):
+    return x / y
+
+
+function_error(1, 5)
+
+print()
+
+
+@log(filename="mylog.txt")
+def my_function_er(x, y):
+    return x / y
+
+
+my_function_er(0, 1)
+
+
