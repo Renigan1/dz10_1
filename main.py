@@ -161,6 +161,6 @@ def my_function_er(x, y):
     return x / y
 
 
-my_function_er(0, 1)
+my_function_er(1, 0)
 
 
